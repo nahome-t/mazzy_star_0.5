@@ -6,7 +6,8 @@ Currently also features the ability to rotate the camera although done rather cr
 
 <img align="left" width="45%" alt="Screenshot 2023-01-30 at 22 37 32" src="https://user-images.githubusercontent.com/53130019/225406746-c720bb42-b00b-45cc-a9c5-66a9b720b12e.png"> <img align="right" width="45%" alt="Screenshot 2023-01-30 at 22 39 49" src="https://user-images.githubusercontent.com/53130019/225408901-61e61e6b-807d-4ec4-9a27-eeafd8a7f698.png">
 
-
+&nbsp;
+&nbsp;
 
 # Improvements for the future
 - Change the way which rotations are done fundementally to avoid points drifting
