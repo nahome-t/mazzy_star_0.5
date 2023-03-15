@@ -5,3 +5,8 @@ Featurse include different configuration of stars, including distributing them r
 
 Currently also features the ability to rotate the camera although done rather crudely (by effectively rotating the world around the camera which eventually leads to a drift of the points
 ![Screenshot 2023-01-30 at 22 40 26](https://user-images.githubusercontent.com/53130019/225407319-1b9c8dc9-5fb2-4f57-a461-022ec0695a29.png)
+Furthermore the program has the ability to change the field of view of the camera,
+
+# Improvements for the future
+- Change the way which rotations are done fundementally to avoid points drifting
+- Implement rotation and projection operations via numpy completely in order to improve performance, currently running quite slow once patricle number increases to over 10k
