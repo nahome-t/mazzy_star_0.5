@@ -11,3 +11,4 @@ Currently also features the ability to rotate the camera although done rather cr
 # Improvements for the future
 - Change the way which rotations are done fundementally to avoid points drifting
 - Implement rotation and projection operations via numpy completely in order to improve performance, currently running quite slow once patricle number increases to over 10k
+- Potentially re-write to include some form of ray-tracing and solve such that it works on non-euclidean geometry (i.e. photons travel around geodesics of curved space time, implementing so would allow us to simulate travelling through e.g. black holes
