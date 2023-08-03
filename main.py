@@ -141,11 +141,6 @@ while running:
 
     keys = pygame.key.get_pressed()
 
-    plus_rotate_ho = False
-    minus_rotate_ho = False
-    plus_rotate_ve = False
-    minus_rotate_ve = False
-
     if keys[pygame.K_UP]:
         velocity[0] += STEPPERS
     if keys[pygame.K_DOWN]:
@@ -154,14 +149,6 @@ while running:
         velocity[1] -= STEPPERS
     if keys[pygame.K_RIGHT]:
         velocity[1] += STEPPERS
-    if keys[pygame.K_d]:
-        plus_rotate_ho = True
-    if keys[pygame.K_a]:
-        minus_rotate_ho = True
-    if keys[pygame.K_s]:
-        plus_rotate_ve = True
-    if keys[pygame.K_w]:
-        minus_rotate_ve = True
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -179,13 +166,13 @@ while running:
     screen.fill((10, 10, 10))
 
     for x in star_field:
-        if plus_rotate_ho:
+        if keys[pygame.K_d]:
             rotate(x, True, dir="Horizontal")
-        if minus_rotate_ho:
+        if keys[pygame.K_a]:
             rotate(x, False, dir="Horizontal")
-        if plus_rotate_ve:
+        if keys[pygame.K_s]:
             rotate(x, True, dir="Vertical")
-        if minus_rotate_ve:
+        if keys[pygame.K_w]:
             rotate(x, False, dir="Vertical")
 
         u = x.get_projection()
